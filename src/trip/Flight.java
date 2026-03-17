@@ -10,7 +10,7 @@ public class Flight extends Service {
 
     @Override
     public BigDecimal calculateCost() {
-        return price;
+        return price.add(new BigDecimal("10"));
     }
 
     @Override
