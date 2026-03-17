@@ -15,7 +15,7 @@ public class Flight extends Service {
 
     @Override
     public String toString() {
-        return "Flight: " + name + ", price=" + price;
+        return "Flight: " + name + ", price=" + price + "Gel";
     }
 
     @Override
