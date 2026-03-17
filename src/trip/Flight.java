@@ -10,12 +10,12 @@ public class Flight extends Service {
 
     @Override
     public BigDecimal calculateCost() {
-        return price.add(new BigDecimal("10"));
+        return price;
     }
 
     @Override
     public String toString() {
-        return "Flight: " + name + ", price=" + price + "Gel";
+        return "Flight: " + name + ", price=" + price;
     }
 
     @Override
