@@ -3,6 +3,11 @@ out/
 !**/src/main/**/out/
 !**/src/test/**/out/
 .kotlin
+out/
+target/
+*.class
+.idea/
+travel-booking-system.iml
 
 ### Eclipse ###
 .apt_generated
