@@ -4,9 +4,19 @@ public class Customer extends Person {
 
     private String email;
 
-    public Customer(String name, String email) {
+
+    public Customer(String name) {
         super(name);
+    }
+
+
+    public void setEmail(String email) {
         this.email = email;
+    }
+
+
+    public String getEmail() {
+        return email;
     }
 
     @Override
@@ -17,18 +27,5 @@ public class Customer extends Person {
     @Override
     public String toString() {
         return "Customer: " + name + ", email=" + email;
-    }
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (!(o instanceof Customer)) return false;
-        Customer c = (Customer) o;
-        return name.equals(c.name) && email.equals(c.email);
-    }
-
-    @Override
-    public int hashCode() {
-        return name.hashCode() + email.hashCode();
     }
 }
