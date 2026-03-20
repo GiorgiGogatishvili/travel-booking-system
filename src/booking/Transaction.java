@@ -9,4 +9,12 @@ public class Transaction {
     public Transaction(BigDecimal amount) {
         this.amount = amount;
     }
+
+    public BigDecimal getAmount() {
+        return amount;
+    }
+
+    public void setAmount(BigDecimal amount) {
+        this.amount = amount;
+    }
 }

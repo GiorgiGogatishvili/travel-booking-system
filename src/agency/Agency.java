@@ -10,13 +10,25 @@ public class Agency {
     private Booking[] bookings;
 
     static {
-        System.out.println("Agency class loaded");
+        System.out.println("Agency loaded");
     }
 
     public Agency(String name, Trip[] trips, Booking[] bookings) {
         this.name = name;
         this.trips = trips;
         this.bookings = bookings;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public Trip[] getTrips() {
+        return trips;
+    }
+
+    public Booking[] getBookings() {
+        return bookings;
     }
 
     @Override
